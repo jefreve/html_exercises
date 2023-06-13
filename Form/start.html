@@ -17,23 +17,44 @@
 
   <body>
     <form>
-      <input type="email">
-      <input type="password">
-      <input type="text">
-      <input type="date">
-      <input type="text">
-      <select>
-        <option>free plan</option>
-        <option>start plan</option>
-        <option>intermediate plan</option>
-      </select>
-      <input type="checkbox">Pro Plan
-      <input type="text">
-      <input type="text">
-      <input type="date">
-      <input type="text">
+      <label for="form-email">Email</label>
+      <input type="email" id="form-email" name="email">
+      
+      <label for="form-pass">Password</label>
+      <input type="password" id="form-pass" name="password">
+
+      <label for="form-name-and-lastname">Name and Lastname</label>
+      <input type="text" id="form-name-and-lastname" name="name-and-lastname">
+
+      <label for="form-date">Date</label>
+      <input type="date" id="form-date" name="date">
+
+      <label for="form-phone">Telephone Number</label>
+      <input type="text" id="form-phone" name="phone">
+      
+      <label for="form-plan">Plans</label>
+        <select required id="form-plan" name="plan">
+          <option value="0">Free</option>
+          <optgroup label="Monthly">
+            <option value="199">1.99€/month</option>
+            <option value="599">5.99€/month</option>
+            <option value="1199">11.99€/month</option>
+          </optgroup>
+        </select>
+      <label for="form-pro-plan">Pro Plan</label>
+      <input type="checkbox" id="form-pro-plan" name="pro-plan">
+
+      <label for="form-creditcard">Credit Card Number</label>
+      <input type="text" id="form-creditcard" name="creditcard" minlegth="16" maxlength="16">
+
+      <label for="form-cvc">CVC</label>
+      <input type="text" id="form-cvc" name="cvc" minlegth="3" maxlength="3">
+
+      <label for="form-expirationdate">Expiration Date</label>
+      <input type="date" id="form-expirationdate" name="expirationdate">
+
+      <label for="form-billingaddress">Billing Address</label>
+      <input type="text" id="form-billingaddress" name="billingaddress">
     </form>
   </body>
 </html>
-
-<
